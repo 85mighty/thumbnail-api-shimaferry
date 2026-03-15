@@ -1,5 +1,10 @@
 {
   "builds": [
     {"src": "api/*.py", "use": "@vercel/python"}
+  ],
+  "routes": [
+    {"src": "/api/thumbnail", "dest": "/api/thumbnail.py"},
+    {"src": "/api/finalize", "dest": "/api/finalize.py"},
+    {"src": "/api/publish", "dest": "/api/publish.py"}
   ]
 }
